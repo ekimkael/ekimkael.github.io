@@ -1,0 +1,33 @@
+.work {
+  height: 12.5rem;
+  width: 12.5rem;
+  padding: 8px;
+  margin: 0 0.5em;
+  border-radius: 2px;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.work:hover {
+  background: linear-gradient(45deg, #9d316e, #de2d3e);
+}
+
+.work:hover h2 {
+  color: black;
+}
+
+.title {
+  margin: 0;
+  color: #989898;
+  font-size: 1.25em;
+}
+
+.category {
+  color: #989898;
+  font-size: 0.75em;
+}
