@@ -80,7 +80,7 @@ class Footer extends Component {
           </a>
         </section>
         <section className="cv">
-        <a href="../../../public/resume.pdf" download="Resume" rel="noreferrer noopener">Download C.V</a>
+        <a href="./resume.pdf" download="Resume" rel="noreferrer noopener">Download C.V</a>
         </section>
       </footer>
     );
