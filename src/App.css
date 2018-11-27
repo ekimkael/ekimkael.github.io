@@ -132,6 +132,10 @@
     position: fixed;
   }
 
+  .me .cv {
+    display: none;
+  }
+
   .content {
     width: 64%;
     display: flex;
@@ -148,10 +152,6 @@
     font-size: 14px;
     width: auto;
     color: crimson;
-  }
-
-  .content div {
-    overflow-y: auto;
   }
 
   .content li {
@@ -224,11 +224,42 @@
   }
 
   .me .cv {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    margin: 0;
+    width: 100%;
+  }
+
+  .content ul {
+    padding: 0;
+  }
+
+  .content li {
+    width: 100%;
+    display: inline-block;
+    margin: 8px auto;
+  }
+
+  .content .works {
+    font-size: 1.7em;
+  }
+
+  .content p {
+    font-size: 1.025em;
+  }
+}
+/* Media Queries max-width:375 */
+
+@media screen and (max-width: 375px) {
+  .me .cv {
     display: block;
     margin: 8px;
   }
 
-  .me .cv a{
+  .me .cv a {
     height: 36px;
     padding: 8px 16px;
     margin: 0 12px;
@@ -236,9 +267,5 @@
     background-color: #000;
     color: #fff;
     font-size: 0.825em;
-  }
-
-  .content {
-    display: flex;
   }
 }

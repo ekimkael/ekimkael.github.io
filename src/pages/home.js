@@ -11,26 +11,26 @@ class Home extends Component {
       isAboutActive: false,
       works: [
         {
-          name: "Starscream",
-          url: "https://github.com/iamKael/starscream",
+          name: "Fais ton voumba",
+          url: "https://faistonvoumba.com",
           description:
-            "Starscream is REST API for a music app built with LoopBack."
+            "Building a blog for showbiz and people using WordPress."
         },
         {
           name: "Mendolearn",
-          url: "https://behance.net/michkael/Mendolean",
+          url: "https://www.behance.net/gallery/61905361/Mendolearn-Mobile-App",
           description:
             "Social network for school and students."
         },
         {
-          name: "Scribe",
-          url: "https://github.com/iamKael/scribe",
+          name: "K-nary",
+          url: "https://mike.yo.fr",
           description:
-            "This simple application allows you to take notes and not lose them in case you close the window by mistake."
+            "A blog about people and other stuff building with WordPress."
         },
         {
           name: "ReactAuth",
-          url: "https://github.com/iamKael/reactauth",
+          url: "https://reactauth.now.sh",
           description:
             "Sample of Authentication process made with React and a design from scratch"
         },
@@ -41,9 +41,9 @@ class Home extends Component {
             "A case study and redesign of the Canal Olympia application"
         },
         {
-          name: "Autodisciple",
-          url: "https://behance.net/michkael/autodisciple",
-          description: "A motivation app inspired by #100DaysOfCode project"
+          name: "Mikefolio",
+          url: "https://www.behance.net/gallery/66527737/Mikefolio-2018",
+          description: "Visual for the earler version of this portfolio that hasn't be implemented(lol)"
         }
       ]
     };
