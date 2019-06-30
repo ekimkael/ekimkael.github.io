@@ -1,52 +1,55 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
 
-// The gray background
-const AboutComponent = styled.section`
-  height: 600px;
-  width: 90%;
-  border-radius: 2px;
-  background-color: #fff;
-  padding: 16px;
-  margin: 0 auto;
-`
-const Resume = styled.p`
-  font-size: 0.85em;
-  font-weight: 500;
-`
-const Header = styled.h3`
-  color: crimson;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-`
-const Subtitle = styled.span`
-  margin: 0 16px;
-  color: #989898;
-  font-size: 12px;
-  display: block;
-`
-const Stack = styled.div`
-  height: 42px;
-  margin: 0 16px;
-  background-color: #000;
-`
+import Link from "react-router-dom/Link";
 
 const About = () => {
-  return <AboutComponent>
-      <Resume>
-        I'm a self-taught designer and developer. Today when I remember, I never really liked the school (buildings) I even managed to escape the catechesis for that reason it's to say; therefore after obtaining my High School Degree it was really hard to go to college because of the money and I finally gave up and started looking for work. I discovered design and programming at the same time in high school and I really liked it.So much that although I was never in computer class, I still had the best grades in the class. At that time there was only one PC at home and my big brother was there all the time so you can imagine how hard it was to practice. Some of my early codes were written on notebooks and it worked the first time.No...I tease you.Sometimes it worked, other times it didn't.I was so glad.By the help of my bro who recommanded me for a job that he was doing on internet AKA transcription, i started working for Pactera Technologies as transcriber. I was finally able to afford my own PC and since then, not a day goes by that I don't make a design or that I don't write a piece of code. I'm also a Mangas/Animes lover. I can't count how many i've watched. <a>Here is a list</a>
-      </Resume>
-      <div className="workflow">
-        <Header>Stack</Header>
-        <Subtitle>Languages</Subtitle>
-        <Stack />
-        <Subtitle>Frameworks & Libraries</Subtitle>
-        <Stack />
-        <Subtitle>Design Tools</Subtitle>
-        <Stack />
+  return (
+    <section className="about">
+      <div className="about-story">
+        <p>
+          Hello I'm <span className="text-crimson">Kael</span>, a self-taught
+          <span className="text-crimson">
+            {" "}
+            UI|UX designer and Frontend developer{" "}
+          </span>
+          from
+          <span className="text-crimson"> Cameroon.</span> <br />I discovered
+          design and programming at the same time in high school and I really
+          liked it, so much that although I was never in computer class, I still
+          had the best grades in the class. After my high school degree it was
+          really hard to go to college 'cause no money, I finally gave up and
+          started looking for work. At that time there was only one PC at home
+          and my big brother was there all the time so you can imagine how hard
+          it was to practice.
+        </p>
+        <blockquote>
+          Some of my early codes were written on notebooks.
+        </blockquote>
+        <p>
+          By the help of my brother, I got a job as transcriber for
+          <span className="text-crimson"> Pactera Technologies.</span> When I
+          finally be able to afford my own PC, not a day goes by that I don't
+          make a design or write a piece of code.
+        </p>
       </div>
-  </AboutComponent>
-}
+      <div className="workflow">
+        <h3 className="title">Random things</h3>
+        <p>
+          I love animes and i've watched tons. Checkout the list{" "}
+          <Link to="/anime_list" className="text-crimson">
+            here
+          </Link>
+        </p>
+      </div>
+      <div className="workflow">
+        <h3 className="title">Stack</h3>
+        <span className="subtitle">Frontend: Langauages & Libraries</span>
+        <div className="stack" />
+        <span className="subtitle">Design: Tools & practices</span>
+        <div className="stack" />
+      </div>
+    </section>
+  );
+};
 
-export default About
+export default About;

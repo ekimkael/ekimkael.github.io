@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 
 @font-face {
   font-family: "Noe Display";
@@ -6,6 +6,14 @@
     url("./fonts/NoeDisplay-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Inter-Medium.woff2") format("woff2"),
+    url("./fonts/Inter-Medium.woff") format("woff");
 }
 
 * {
@@ -16,7 +24,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Mono", "Noe Display", sans-serif;
+  font-family: "Inter", "Robot", "Noe Display", sans-serif;
   background-color: #fff;
 }
 
@@ -52,36 +60,9 @@ ul {
 #root {
   position: relative;
 }
-
-.others {
-  color: black;
-}
-
-.back {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  color: #fff !important;
-  z-index: 200;
-  padding: 4px 8px;
-  margin: 0;
-  border: 1px solid #fff;
-  border-radius: 32px;
-  font-weight: bold;
-  font-size: 0.825em;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-  height: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: crimson;
-}
-
-::-webkit-scrollbar-track {
-  background: #000;
+/* colors */
+.text-crimson {
+  color: crimson;
 }
 
 /* Media Queries max-width:640 */
@@ -99,4 +80,382 @@ ul {
   main {
     flex-direction: column;
   }
+}
+
+/* Navbar */
+nav {
+  height: 48px;
+  width: 90%;
+  padding: 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+nav .btn-back {
+  border: none;
+  cursor: pointer;
+  background-color: rgba(237, 20, 61, 0.08);
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+nav .nav-right {
+  padding: 0.825em;
+}
+
+nav a {
+  padding: 0.825em;
+}
+
+nav a:hover {
+  color: crimson;
+}
+
+/* About */
+
+.about {
+  height: 600px;
+  width: 90%;
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.about-story {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.about-story blockquote {
+  font-size: 1.125em;
+  border-left: 5px solid crimson;
+  border-right: 5px solid crimson;
+  padding: 0.425em 0.825em;
+  background-color: rgba(237, 20, 61, 0.08);
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.workflow .title {
+  color: crimson;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.workflow .stack {
+  height: 42px;
+  margin: 0 0.75em;
+  background-color: #000;
+}
+
+.workflow .subtitle {
+  margin: 1em 1em 0.5em;
+  color: #989898;
+  font-size: 12px;
+  display: block;
+}
+
+/* Aside */
+
+.me {
+  width: 30%;
+  height: 100vh;
+  max-height: 100vh;
+  padding: 1em;
+  position: fixed;
+}
+
+.me img {
+  width: 100%;
+  height: auto;
+}
+
+.me section {
+  text-align: center;
+}
+
+.me .name {
+  font-family: "Noe Display";
+  font-weight: 900;
+  line-height: 1.25;
+  font-size: 3em;
+  color: crimson;
+  text-align: center;
+}
+
+.me .presentation {
+  font-weight: 500;
+  font-size: 0.925em;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.me blockquote {
+  font-size: 1.125em;
+  border-left: 5px solid crimson;
+  border-right: 5px solid crimson;
+  padding: 0.425em 0.825em;
+  background-color: rgba(237, 20, 61, 0.08);
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.me .cv {
+  display: none;
+}
+
+/* works displayer  */
+
+.content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  /* padding-bottom: 40px; */
+  position: relative;
+  margin-left: 30%;
+}
+
+.content li {
+  width: 17.5em;
+  height: 12em;
+  max-height: 12em;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 8px;
+  margin: 8px;
+  vertical-align: top;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.content li:hover {
+  border: 1px solid #000;
+  background-color: #000;
+}
+
+.content li:hover .works {
+  color: crimson;
+}
+
+.content li .works {
+  position: relative;
+  font-family: "Noe Display";
+  font-weight: 900;
+  line-height: 1.25;
+  font-size: 2.1em;
+  color: #000;
+}
+
+.content li:hover p {
+  color: #fff;
+}
+
+.content p {
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Media Queries max-width:640 */
+
+@media screen and (max-width: 640px) {
+  #about {
+    right: 24px;
+  }
+
+  .me {
+    width: 36%;
+    height: 100vh;
+    max-height: 100vh;
+    padding: 1em;
+    border-right: 1px solid #000;
+    position: fixed;
+  }
+
+  .me .cv {
+    display: none;
+  }
+
+  .content {
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    position: relative;
+    margin-left: 36%;
+  }
+
+  .content .allWorks {
+    font-family: "Roboto Mono";
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    width: auto;
+    color: crimson;
+  }
+
+  .content li {
+    width: 20em;
+    height: 11em;
+    max-height: 11em;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 8px;
+    margin: 8px;
+    vertical-align: top;
+    cursor: pointer;
+  }
+
+  .content li:hover {
+    border: 1px solid #000;
+    background-color: #000;
+  }
+
+  .content li .works {
+    position: relative;
+    font-family: "Noe Display";
+    font-weight: 900;
+    line-height: 1.8;
+    font-size: 1.4em;
+    color: #000;
+  }
+
+  .content li:hover .works {
+    color: crimson;
+  }
+
+  .content li:hover p {
+    color: #fff;
+  }
+
+  .content p {
+    font-size: 0.925em;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+/* Media Queries max-width:480 */
+
+@media screen and (max-width: 480px) {
+  #about {
+    right: 24px;
+  }
+
+  .me {
+    width: 100vw;
+    height: auto;
+    padding: 1em;
+    border-right: none;
+    position: relative;
+  }
+
+  .me .name {
+    font-size: 2.5em;
+  }
+
+  .me .presentation {
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .me .cv {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* Navbar */
+  nav {
+    width: 100vw;
+    padding: 16px;
+    margin: -16px;
+    border-bottom: 5px solid crimson;
+  }
+
+  .about {
+    height: auto;
+    width: auto;
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .content ul {
+    padding: 0;
+  }
+
+  .content li {
+    width: 100%;
+    display: inline-block;
+    margin: 8px auto;
+  }
+
+  .content .works {
+    font-size: 1.7em;
+  }
+
+  .content p {
+    font-size: 1.15em;
+  }
+}
+/* Media Queries max-width:375 */
+
+@media screen and (max-width: 375px) {
+  .me .cv {
+    display: block;
+    margin: 8px;
+  }
+
+  .me .cv a {
+    height: 36px;
+    padding: 8px 16px;
+    margin: 0 12px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.825em;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: crimson;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::selection {
+  background-color: rgba(237, 20, 60, 0.24);
+  color: #00e;
 }
