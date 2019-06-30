@@ -17,7 +17,7 @@ function Aside() {
             href="https://drive.google.com/file/d/1PVi2REVP4G-wzhsiIyBv55akYsRlRZ9P/view?usp=sharing"
             rel="noreferrer noopener"
           >
-            See my C.V
+            Here is my resume
           </a>
         </section>
       </section>

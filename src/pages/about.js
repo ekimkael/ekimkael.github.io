@@ -13,14 +13,19 @@ const About = () => {
             UI|UX designer and Frontend developer{" "}
           </span>
           from
-          <span className="text-crimson"> Cameroon.</span> <br />I discovered
-          design and programming at the same time in high school and I really
-          liked it, so much that although I was never in computer class, I still
-          had the best grades in the class. After my high school degree it was
-          really hard to go to college 'cause no money, I finally gave up and
-          started looking for work. At that time there was only one PC at home
-          and my big brother was there all the time so you can imagine how hard
-          it was to practice.
+          <span className="text-crimson"> Cameroon</span>. <br />
+          In other words I make interfaces like what you see here and I focus on
+          what are essential for your users to quickly understand what you do so
+          they can get started with you.
+        </p>
+        <p>
+          I discovered design and programming at the same time in high school
+          and I really liked it, so much that although I was never in computer
+          class, I still had the best grades in the class. After my high school
+          degree it was really hard to go to college 'cause no money, I finally
+          gave up and started looking for work. At that time there was only one
+          PC at home and my big brother was there all the time so you can
+          imagine how hard it was to practice.
         </p>
         <blockquote>
           Some of my early codes were written on notebooks.

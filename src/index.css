@@ -1,19 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
-
-@font-face {
-  font-family: "Noe Display";
-  src: url("./fonts/NoeDisplay-Bold.woff2") format("woff2"),
-    url("./fonts/NoeDisplay-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   src: url("./fonts/Inter-Medium.woff2") format("woff2"),
     url("./fonts/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "You2013";
+  src: url("./fonts/You2013.ttf") format("ttf");
 }
 
 * {
@@ -24,7 +19,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", "Robot", "Noe Display", sans-serif;
+  font-family: "Inter", "You2013", sans-serif;
   background-color: #fff;
 }
 
@@ -41,7 +36,7 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: "Noe Display";
+  font-family: "You2013";
 }
 
 main {
@@ -186,7 +181,7 @@ nav a:hover {
 }
 
 .me .name {
-  font-family: "Noe Display";
+  font-family: "You2013";
   font-weight: 900;
   line-height: 1.25;
   font-size: 3em;
@@ -252,7 +247,7 @@ nav a:hover {
 
 .content li .works {
   position: relative;
-  font-family: "Noe Display";
+  font-family: "You2013";
   font-weight: 900;
   line-height: 1.25;
   font-size: 2.1em;
@@ -328,7 +323,7 @@ nav a:hover {
 
   .content li .works {
     position: relative;
-    font-family: "Noe Display";
+    font-family: "You2013";
     font-weight: 900;
     line-height: 1.8;
     font-size: 1.4em;
@@ -431,12 +426,11 @@ nav a:hover {
   }
 
   .me .cv a {
-    height: 36px;
-    padding: 8px 16px;
+    padding: 16px;
     margin: 0 12px;
-    border: 1px solid #000;
-    background-color: #000;
-    color: #fff;
+    border: 1px solid crimson;
+    background-color: crimson;
+    color: #000;
     font-size: 0.825em;
   }
 }
