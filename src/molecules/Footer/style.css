@@ -32,8 +32,8 @@
 .footer .cv a {
   margin: 0 12px;
   padding: 6px 12px;
-  background-color: crimson;
-  border: 1px solid crimson;
+  background-color: rgba(237, 20, 61, 1);
+  border: 1px solid rgba(237, 20, 61, 1);
   color: #000;
   font-size: 0.825em;
 }
@@ -41,9 +41,9 @@
 .footer .cv a:hover {
   margin: 0 12px;
   padding: 6px 12px;
-  border: 1px solid crimson;
+  border: 1px solid rgba(237, 20, 61, 1);
   background-color: #000;
-  color: crimson;
+  color: rgba(237, 20, 61, 1);
 }
 
 /* Media Queries max-width:375 */

@@ -1,5 +1,4 @@
 import React from "react";
-
 import Link from "react-router-dom/Link";
 
 const About = () => {
@@ -19,22 +18,13 @@ const About = () => {
           they can get started with you.
         </p>
         <p>
-          I discovered design and programming at the same time in high school
-          and I really liked it, so much that although I was never in computer
-          class, I still had the best grades in the class. After my high school
-          degree it was really hard to go to college 'cause no money, I finally
-          gave up and started looking for work. At that time there was only one
-          PC at home and my big brother was there all the time so you can
-          imagine how hard it was to practice.
-        </p>
-        <blockquote>
-          Some of my early codes were written on notebooks.
-        </blockquote>
-        <p>
-          By the help of my brother, I got a job as transcriber for
-          <span className="text-crimson"> Pactera Technologies.</span> When I
-          finally be able to afford my own PC, not a day goes by that I don't
-          make a design or write a piece of code.
+          As everyone have his story and to not bored you with that, you can
+          read my story
+          <Link to="/story" className="text-crimson">
+            {" "}
+            here{" "}
+          </Link>
+          if you want but here are random things to know about me.
         </p>
       </div>
       <div className="workflow">

@@ -8,7 +8,10 @@
 
 @font-face {
   font-family: "You2013";
-  src: url("./fonts/You2013.ttf") format("ttf");
+  src: url("./fonts/You2013.woff2") format("woff2"),
+    url("./fonts/You2013.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -57,7 +60,7 @@ ul {
 }
 /* colors */
 .text-crimson {
-  color: crimson;
+  color: rgba(237, 20, 61, 1);
 }
 
 /* Media Queries max-width:640 */
@@ -95,7 +98,7 @@ nav {
 nav .btn-back {
   border: none;
   cursor: pointer;
-  background-color: rgba(237, 20, 61, 0.08);
+  background-color: rgba(237, 20, 61, 0.24);
   height: 32px;
   width: 32px;
   border-radius: 50%;
@@ -111,7 +114,7 @@ nav a {
 }
 
 nav a:hover {
-  color: crimson;
+  color: rgba(237, 20, 61, 1);
 }
 
 /* About */
@@ -133,16 +136,16 @@ nav a:hover {
 
 .about-story blockquote {
   font-size: 1.125em;
-  border-left: 5px solid crimson;
-  border-right: 5px solid crimson;
+  border-left: 5px solid rgba(237, 20, 61, 1);
+  border-right: 5px solid rgba(237, 20, 61, 1);
   padding: 0.425em 0.825em;
-  background-color: rgba(237, 20, 61, 0.08);
+  background-color: rgba(237, 20, 61, 0.24);
   margin-right: 0;
   margin-left: 0;
 }
 
 .workflow .title {
-  color: crimson;
+  color: rgba(237, 20, 61, 1);
   font-size: 20px;
   margin: 0;
   padding: 0;
@@ -185,7 +188,7 @@ nav a:hover {
   font-weight: 900;
   line-height: 1.25;
   font-size: 3em;
-  color: crimson;
+  color: rgba(237, 20, 61, 1);
   text-align: center;
 }
 
@@ -198,10 +201,10 @@ nav a:hover {
 
 .me blockquote {
   font-size: 1.125em;
-  border-left: 5px solid crimson;
-  border-right: 5px solid crimson;
+  border-left: 5px solid rgba(237, 20, 61, 1);
+  border-right: 5px solid rgba(237, 20, 61, 1);
   padding: 0.425em 0.825em;
-  background-color: rgba(237, 20, 61, 0.08);
+  background-color: rgba(237, 20, 61, 0.24);
   margin-right: 0;
   margin-left: 0;
 }
@@ -237,12 +240,13 @@ nav a:hover {
 }
 
 .content li:hover {
-  border: 1px solid #000;
-  background-color: #000;
+  border: none;
+  border: 1px solid rgba(237, 20, 61, 0.2);
+  box-shadow: 0 0 8px 8px rgba(237, 20, 61, 0.2);
 }
 
 .content li:hover .works {
-  color: crimson;
+  color: rgba(237, 20, 61, 1);
 }
 
 .content li .works {
@@ -254,15 +258,18 @@ nav a:hover {
   color: #000;
 }
 
-.content li:hover p {
-  color: #fff;
-}
-
 .content p {
   font-weight: 500;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+/* Case study */
+
+.cs-title {
+  font-size: 3.125em;
+  color: rgba(237, 20, 61, 1);
 }
 
 /* Media Queries max-width:640 */
@@ -300,7 +307,7 @@ nav a:hover {
     cursor: pointer;
     font-size: 14px;
     width: auto;
-    color: crimson;
+    color: rgba(237, 20, 61, 1);
   }
 
   .content li {
@@ -331,7 +338,7 @@ nav a:hover {
   }
 
   .content li:hover .works {
-    color: crimson;
+    color: rgba(237, 20, 61, 1);
   }
 
   .content li:hover p {
@@ -366,6 +373,10 @@ nav a:hover {
     font-size: 2.5em;
   }
 
+  .me blockquote {
+    font-size: 1.025em;
+  }
+
   .me .presentation {
     font-weight: 500;
     font-size: 1em;
@@ -387,7 +398,7 @@ nav a:hover {
     width: 100vw;
     padding: 16px;
     margin: -16px;
-    border-bottom: 5px solid crimson;
+    border-bottom: 5px solid rgba(237, 20, 61, 1);
   }
 
   .about {
@@ -428,8 +439,8 @@ nav a:hover {
   .me .cv a {
     padding: 16px;
     margin: 0 12px;
-    border: 1px solid crimson;
-    background-color: crimson;
+    border: 1px solid rgba(237, 20, 61, 1);
+    background-color: rgba(237, 20, 61, 1);
     color: #000;
     font-size: 0.825em;
   }
@@ -442,7 +453,7 @@ nav a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: crimson;
+  background: rgba(237, 20, 61, 1);
 }
 
 ::-webkit-scrollbar-track {
@@ -450,6 +461,6 @@ nav a:hover {
 }
 
 ::selection {
-  background-color: rgba(237, 20, 60, 0.24);
+  background-color: rgba(237, 20, 61, 0.24);
   color: #00e;
 }

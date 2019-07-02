@@ -19,6 +19,9 @@ class Navbar extends Component {
           <NavLink to="/" className="nav-link">
             Projects
           </NavLink>
+          <NavLink to="/case-studies" className="nav-link">
+            Case Studies
+          </NavLink>
           <NavLink to="/about" className="nav-link">
             About
           </NavLink>

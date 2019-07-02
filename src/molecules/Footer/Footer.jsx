@@ -110,7 +110,7 @@ class Footer extends Component {
             href="https://drive.google.com/file/d/1PVi2REVP4G-wzhsiIyBv55akYsRlRZ9P/view?usp=sharing"
             rel="noreferrer noopener"
           >
-            Here is my resume
+            Download my resume
           </a>
         </section>
       </footer>
