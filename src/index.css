@@ -155,7 +155,13 @@ nav a:hover {
 .workflow .stack {
   height: 42px;
   margin: 0 0.75em;
-  background-color: #000;
+  /* background-color: #000; */
+}
+
+.workflow .stack svg {
+  height: 42px;
+  width: 42px;
+  margin: 0 1rem;
 }
 
 .workflow .subtitle {
