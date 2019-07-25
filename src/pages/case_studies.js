@@ -36,7 +36,6 @@ class CaseStudies extends Component {
 
   render() {
     const { works } = this.state;
-    console.log(this.props.match);
     return (
       <React.Fragment>
         <div>

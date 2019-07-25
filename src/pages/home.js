@@ -40,7 +40,6 @@ class Home extends Component {
 
   render() {
     const { works } = this.state;
-    console.log(this.props.match.isExact);
     return (
       <React.Fragment>
         <div>

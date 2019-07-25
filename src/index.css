@@ -85,9 +85,9 @@ nav {
   height: 48px;
   width: 90%;
   padding: 16px;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: row;
   align-items: center;
   position: sticky;
@@ -103,6 +103,7 @@ nav .btn-back {
   width: 32px;
   border-radius: 50%;
   padding: 0;
+  outline: none;
 }
 
 nav .nav-right {
