@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import { NavLink, withRouter } from "react-router-dom";
+import React, { Component } from "react"
+import { NavLink, withRouter } from "react-router-dom"
 
 class Navbar extends Component {
   handleBackButton = () => {
-    this.props.history.goBack();
-  };
+    this.props.history.goBack()
+  }
 
   render() {
-    console.log(this.props.history);
+    console.log(this.props.history)
 
     return (
       <nav>
@@ -26,19 +26,17 @@ class Navbar extends Component {
           </button>
         )}
         <section className="nav-right">
-          <NavLink to="/" className="nav-link">
-            Projects
+          <NavLink exact to="/" className="nav-link">
+            Home
           </NavLink>
-          <NavLink to="/case-studies" className="nav-link">
-            Case Studies
-          </NavLink>
+          <span className="nav-link disabled">Case Studies</span>
           <NavLink to="/about" className="nav-link">
             About
           </NavLink>
         </section>
       </nav>
-    );
+    )
   }
 }
 
-export default withRouter(Navbar);
+export default withRouter(Navbar)

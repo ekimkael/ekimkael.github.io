@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./style.css";
+import React, { Component } from "react"
+import "./style.css"
 
 class Footer extends Component {
   render() {
@@ -49,7 +49,7 @@ class Footer extends Component {
             </svg>
           </a>
           <a
-            href="https://behance.net/michkael/"
+            href="https://behance.net/iamkael/"
             className="links"
             target="_blank"
             rel="noreferrer noopener"
@@ -63,7 +63,7 @@ class Footer extends Component {
             </svg>
           </a>
           <a
-            href="http://linkedin.com/in/michel-mbili"
+            href="http://linkedin.com/in/michelmbili"
             className="links"
             target="_blank"
             rel="noreferrer noopener"
@@ -114,8 +114,8 @@ class Footer extends Component {
           </a>
         </section>
       </footer>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer
