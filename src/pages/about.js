@@ -16,7 +16,7 @@ const About = () => {
           In other words I make interfaces like what you see here and I focus on
           what are essential for your users to quickly understand what you do so
           they can get started with you. That's why I like to work on projects
-          that bring value to people.
+          who are useful to people.
         </p>
         <p>
           Because everyone have his story but to not bother you with that, you
