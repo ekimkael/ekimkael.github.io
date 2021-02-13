@@ -7,7 +7,7 @@ class Footer extends Component {
       <footer className="footer">
         <section className="socials">
           <a
-            href="https://twitter.com/iamkael_/"
+            href="https://twitter.com/ekimkael/"
             className="links"
             target="_blank"
             rel="noreferrer noopener"
@@ -21,7 +21,7 @@ class Footer extends Component {
             </svg>
           </a>
           <a
-            href="http://www.github.com/iamKael/"
+            href="http://www.github.com/ekimkael/"
             className="links"
             target="_blank"
             rel="noreferrer noopener"
@@ -35,7 +35,7 @@ class Footer extends Component {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com/iam.kael_/"
+            href="https://www.instagram.com/ekimkael/"
             className="links"
             target="_blank"
             rel="noreferrer noopener"
@@ -49,7 +49,7 @@ class Footer extends Component {
             </svg>
           </a>
           <a
-            href="https://behance.net/iamkael/"
+            href="https://behance.net/ekimkael/"
             className="links"
             target="_blank"
             rel="noreferrer noopener"
@@ -77,7 +77,7 @@ class Footer extends Component {
             </svg>
           </a>
           <a
-            href="https://medium.com/@iamkael"
+            href="https://medium.com/@ekimkael"
             className="links"
             target="_blank"
             rel="noreferrer noopener"
