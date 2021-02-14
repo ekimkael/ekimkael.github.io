@@ -1,41 +1,29 @@
 {
-  "name": "mikefolio",
-  "description": "My online C.V/portfolio",
-  "version": "2.4.6",
-  "homepage": "https://iamkael.github.io/",
-  "private": true,
-  "dependencies": {
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "3.0.1"
-  },
-  "keywords": [
-    "portfolio",
-    "works",
-    "c.v"
-  ],
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
-  },
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "ekimkael",
+	"version": "3.0.2",
+	"private": true,
+	"author": {
+		"name": "Ekim Kael",
+		"email": "michelmbili@gmail.com",
+		"url": "https://ekimkael.github.io"
+	},
+	"scripts": {
+		"dev": "next dev -p 9999",
+		"build": "next build",
+		"export": "next export",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@hookform/resolvers": "^1.0.0",
+		"bootstrap": "^4.5.2",
+		"cookie": "^0.4.1",
+		"jsonwebtoken": "^8.5.1",
+		"next": "10.0.5",
+		"nprogress": "^0.2.0",
+		"react": "16.13.1",
+		"react-dom": "16.13.1",
+		"react-hook-form": "^6.9.6",
+		"sass": "^1.26.10",
+		"yup": "^0.29.3"
+	}
 }
