@@ -27,7 +27,7 @@ jobs:
         with:
           cmd: export # will run `yarn export` command
 
-      - run: touch ./out/.nojekyll
+      - run: sudo touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
