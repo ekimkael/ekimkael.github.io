@@ -5,6 +5,6 @@ module.exports = {
 	sassOptions: {
 		includePaths: [path.join(__dirname, "styles")],
 	},
-	basePath: "",
-	assetPrefix: isProd ? "" : "",
+	basePath: "https://ekimkael.github.io",
+	assetPrefix: isProd ? "https://ekimkael.github.io" : "",
 }
