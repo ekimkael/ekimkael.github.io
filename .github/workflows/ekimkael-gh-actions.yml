@@ -18,13 +18,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - uses: borales/actions-yarn@v2.0.0
       with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build
-    - run: npm run export
+        cmd: install --frozen-lockfile # will run `yarn install --frozen-lockfile` command
+    - uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: build # will run `yarn build` command
+    - uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: export # will run `yarn export` command
       
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.0.0
