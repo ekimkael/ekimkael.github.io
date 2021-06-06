@@ -123,7 +123,7 @@ export default function Home() {
 										A Nextjs boilerplate with steroid packages.
 									</p>
 									<section
-										class="btn-group btn-group-sm"
+										className="btn-group btn-group-sm"
 										role="group"
 										aria-label="Basic example"
 									>

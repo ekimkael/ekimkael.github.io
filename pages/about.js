@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Image from "next/image"
 import Navbar from "../organisms/Navbar"
 
 export default function About() {
@@ -14,8 +13,8 @@ export default function About() {
 			<div className="container">
 				<div className="row">
 					<div className="col-12 col-md-6">
-						<Image
-							src="/icon.png"
+						<img
+							src="/assets/icon.png"
 							layout="fill"
 							className="img-fluid"
 							alt="Memoji of Ekim Kael"
