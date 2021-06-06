@@ -4,8 +4,8 @@ module.exports = {
 	sassOptions: {
 		includePaths: [path.join(__dirname, "styles")],
 	},
-	images: {
-		loader: "default",
-		path: "/_next/image",
-	},
+	// images: {
+	// 	loader: "default",
+	// 	path: "/_next/image",
+	// },
 }
