@@ -6,6 +6,7 @@ import Twitter from "../organisms/socials/Twitter"
 import Behance from "../organisms/socials/Behance"
 import LinkedIn from "../organisms/socials/LinkedIn"
 import Dribbble from "../organisms/socials/Dribbble"
+import ExternalLink from "../organisms/ExternalLink"
 
 export default function Home() {
 	return (
@@ -27,7 +28,7 @@ export default function Home() {
 							<h1 className="w-title text-white">
 								<b>Ekim Kael.</b>
 							</h1>
-							<h3 className="text-secondary">UX Engineer from Cameroon.</h3>
+							<h3 className="text-secondary">UX Engineer • UX Developer.</h3>
 							<p className="w-lead text-white py-3">
 								I love when beautiful things are useful.
 							</p>
@@ -51,7 +52,7 @@ export default function Home() {
 									target="_blank"
 									rel="noreferrer noopener"
 								>
-									<GitHub />
+									<GitHub width="24" height="24" />
 								</a>
 								<a
 									href="https://dribbble.com/ekimkael/"
@@ -111,7 +112,7 @@ export default function Home() {
 							<ul className="list-group">
 								<li className="list-group-item list-group-item-action">
 									<div className="d-flex w-100 justify-content-between">
-										<h3 className="text-white mb-1">
+										<h3 className="text-secondary mb-1">
 											<b>Nextrap</b>
 										</h3>
 										<small className="badge badge-info align-self-start">
@@ -121,10 +122,32 @@ export default function Home() {
 									<p className="mb-1">
 										A Nextjs boilerplate with steroid packages.
 									</p>
+									<section
+										class="btn-group btn-group-sm"
+										role="group"
+										aria-label="Basic example"
+									>
+										<a
+											href="https://github.com/ekimkael/nextrap"
+											target="blank"
+											role="button"
+											className="btn btn-outline-light border-0"
+										>
+											<GitHub width="16" height="16" />
+										</a>
+										<a
+											href="https://nextrap.vercel.app/"
+											target="blank"
+											role="button"
+											className="btn btn-outline-light border-0"
+										>
+											<ExternalLink />
+										</a>
+									</section>
 								</li>
 								<li className="list-group-item list-group-item-action">
 									<div className="d-flex w-100 justify-content-between">
-										<h3 className="text-white mb-1">
+										<h3 className="text-secondary mb-1">
 											<b>Cococi</b>
 										</h3>
 										<small className="badge badge-danger align-self-start">
@@ -134,10 +157,24 @@ export default function Home() {
 									<p className="mb-1">
 										Non-profit organization helping orphans.
 									</p>
+									<div
+										class="btn-group btn-group-sm"
+										role="group"
+										aria-label="Basic example"
+									>
+										<a
+											href="https://cococi.org/"
+											target="blank"
+											role="button"
+											className="btn btn-outline-light border-0"
+										>
+											<ExternalLink />
+										</a>
+									</div>
 								</li>
 								<li className="list-group-item list-group-item-action">
 									<div className="d-flex w-100 justify-content-between">
-										<h3 className="text-white mb-1">
+										<h3 className="text-secondary mb-1">
 											<b>Cryptochain</b>
 										</h3>
 										<section>
@@ -152,21 +189,32 @@ export default function Home() {
 									<p className="mb-1">
 										Buy, sell bitcoin without pain and save time.
 									</p>
+									<section
+										class="btn-group btn-group-sm"
+										role="group"
+										aria-label="Basic example"
+									>
+										<a
+											href="https://github.com/ekimkael/blockchain"
+											target="blank"
+											role="button"
+											className="btn btn-outline-light border-0"
+										>
+											<GitHub width="16" height="16" />
+										</a>
+										<a
+											href="https://cryptomum.vercel.app/"
+											target="blank"
+											role="button"
+											className="btn btn-outline-light border-0"
+										>
+											<ExternalLink />
+										</a>
+									</section>
 								</li>
 								<li className="list-group-item list-group-item-action">
 									<div className="d-flex w-100 justify-content-between">
-										<h3 className="text-white mb-1">
-											<b>Chosenews</b>
-										</h3>
-										<small className="badge badge-secondary align-self-start">
-											Redesign
-										</small>
-									</div>
-									<p className="mb-1">Redesign of a daily news app.</p>
-								</li>
-								<li className="list-group-item list-group-item-action">
-									<div className="d-flex w-100 justify-content-between">
-										<h3 className="text-white mb-1">
+										<h3 className="text-secondary mb-1">
 											<b>WPTB</b>
 										</h3>
 										<section>
@@ -181,6 +229,20 @@ export default function Home() {
 									<p className="mb-1">
 										CLI to scraffold WordPress theme development.
 									</p>
+									<section
+										class="btn-group btn-group-sm"
+										role="group"
+										aria-label="Basic example"
+									>
+										<a
+											href="https://github.com/ekimkael/wptb"
+											target="blank"
+											role="button"
+											className="btn btn-outline-light border-0"
+										>
+											<GitHub width="16" height="16" />
+										</a>
+									</section>
 								</li>
 							</ul>
 						</div>
